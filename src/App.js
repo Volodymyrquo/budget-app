@@ -7,18 +7,21 @@ import {
   IncomeList,
   ExpenseList,
 } from './components';
+import { GlobalContextProvider } from './context/GlobalState';
 
 const App = () => {
   return (
-    <div className='container'>
-      <div className='app-wrapper'>
-        <Header />
-        <Balance />
-        <AddTransaction />
-        <IncomeList />
-        <ExpenseList />
+    <GlobalContextProvider>
+      <div className='container'>
+        <div className='app-wrapper'>
+          <Header />
+          <Balance />
+          <AddTransaction />
+          <IncomeList />
+          <ExpenseList />
+        </div>
       </div>
-    </div>
+    </GlobalContextProvider>
   );
 };
 
