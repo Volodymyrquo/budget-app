@@ -1,6 +1,12 @@
 import React from 'react';
 import './App.css';
-import { Header, Balance } from './components';
+import {
+  Header,
+  Balance,
+  AddTransaction,
+  IncomeList,
+  ExpenseList,
+} from './components';
 
 const App = () => {
   return (
@@ -8,6 +14,9 @@ const App = () => {
       <div className='app-wrapper'>
         <Header />
         <Balance />
+        <AddTransaction />
+        <IncomeList />
+        <ExpenseList />
       </div>
     </div>
   );
