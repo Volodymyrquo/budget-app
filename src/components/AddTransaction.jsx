@@ -15,17 +15,19 @@ const AddTransaction = () => {
   };
   const onSubmitIncome = (e) => {
     e.preventDefault();
-    const newIncomeTransaction = {
-      id: uuidv4(),
-      incomeText,
-      incomeAmount: incomeAmount * 1,
-    };
+    if (incomeText !== '') {
+      const newIncomeTransaction = {
+        id: uuidv4(),
+        incomeText,
+        incomeAmount: incomeAmount * 1,
+      };
 
-    addIncome(newIncomeTransaction);
-    setIncome({
-      incomeText: '',
-      incomeAmount: 0,
-    });
+      addIncome(newIncomeTransaction);
+      setIncome({
+        incomeText: '',
+        incomeAmount: 0,
+      });
+    }
   };
 
   const [expense, setExpense] = useState({
@@ -39,17 +41,19 @@ const AddTransaction = () => {
   };
   const onSubmitExpense = (e) => {
     e.preventDefault();
-    const newExpenseTransaction = {
-      id: uuidv4(),
-      expenseText,
-      expenseAmount: expenseAmount * 1,
-    };
+    if (expenseText !== '') {
+      const newExpenseTransaction = {
+        id: uuidv4(),
+        expenseText,
+        expenseAmount: expenseAmount * 1,
+      };
 
-    addExpense(newExpenseTransaction);
-    setExpense({
-      expenseText: '',
-      expenseAmount: 0,
-    });
+      addExpense(newExpenseTransaction);
+      setExpense({
+        expenseText: '',
+        expenseAmount: 0,
+      });
+    }
   };
   return (
     <div className='form-wrapper'>
