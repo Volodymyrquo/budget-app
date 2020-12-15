@@ -1,8 +1,13 @@
-# Getting Started with Create React App
+# Budget App
+
+## [Live Site](https://vquo-budget-app-gh.netlify.app/)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a5485e90-5714-42c6-a949-d25d270c9192/deploy-status)](https://app.netlify.com/sites/vquo-budget-app-gh/deploys)
+![Budget app](https://i.ibb.co/ysnZZJg/budget-app.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
